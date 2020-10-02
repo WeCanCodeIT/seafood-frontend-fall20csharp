@@ -10,6 +10,11 @@ body {
    /* width: 80%;  */
    background-image: url(images/seafood-meal-cropped.jpg);
    background-size: cover;
+   background-attachment: fixed;
+}
+
+header {
+    background-color: black;
 }
 
 .main-container {
@@ -26,10 +31,51 @@ body {
     height: 100%;
 }
 
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+    .menu-container div {
+        border: solid white;
+        padding: 1rem;
+        margin: .5rem;
+        min-width: 10rem;
+        min-height: 10rem;
+    }
+
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+    .nav-container a {
+        text-decoration: none;
+    }
+
+    .nav-container-heading {
+        text-align: center;
+    }
+
+    .nav-container-parent {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
 section {
     background-color: rgb(156, 59, 59);
-    opacity: 80%;
+    opacity: 90%;
     width: 80%;
     margin: auto;
+    padding: 1rem;
+    border-radius: .25rem;
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
 }
+
+    #specialties p {
+        text-align: justify;
+    }
 
